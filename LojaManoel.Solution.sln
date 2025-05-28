@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaManoel.Api", "src\Backe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaManoel.Communication", "src\Backend\LojaManoel.Communication\LojaManoel.Communication.csproj", "{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{D58420E0-1A83-4FE6-83D0-0F72CE2F9E48} = {3EE88D96-575A-48FF-9896-33B0D9B68864}
 		{FF55536E-6AF7-4800-8B03-E1FB443047E3} = {3EE88D96-575A-48FF-9896-33B0D9B68864}
 		{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E} = {3EE88D96-575A-48FF-9896-33B0D9B68864}
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A} = {7BF478A4-A560-4256-81B7-7474D4932873}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9CCC593-4EBB-444B-9CBF-460C20E0ADB8}

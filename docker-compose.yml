@@ -1,0 +1,6 @@
+services:
+  lojamanoel.api:
+    image: ${DOCKER_REGISTRY-}lojamanoelapi
+    build:
+      context: .
+      dockerfile: src\Backend\LojaManoel.Api\Dockerfile
