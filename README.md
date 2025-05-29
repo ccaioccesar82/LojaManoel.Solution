@@ -17,7 +17,11 @@ Após as imagens subirem, o botão de rodar o sistema pelo docker compose será 
 ![clicar em docker compose](https://github.com/user-attachments/assets/d8d860d7-4a56-4f1f-ba79-c653a780d0e6)
 
 Após rodar, o Swagger deverá abrir na porta :8080 com os dois endpoints de serviço:
+
+
 /api/create/pedido - Cria um pedido com uma lista de itens da sua escolha
+
+
 /caixa-produto - devolve todos os pedidos, dizendo quantas caixas serão usadas no pedido e quais produtos vão em cada caixa
 
 ![swagger](https://github.com/user-attachments/assets/0cd0a061-aa00-4e5a-b7e8-f38501f33e51)
