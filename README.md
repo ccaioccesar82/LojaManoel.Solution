@@ -29,4 +29,4 @@ Após rodar, o Swagger deverá abrir na porta :8080 com os dois endpoints de ser
 
 
 
-Obs: Após o o conteiner docker, com todas as configurações subirem, caso você feche a aplicação e abra de novo, e o sistema dê algum erro do tipo "o database 'lojamanoel' já existe", é porque ele está tentando aplicar as migrações novamente. A única coisa que você precisa fazer, é ir no arquivo de docker-compose e trocar o "APPLY_MIGRATIONS=true" para "APPLY_MIGRATIONS=false".
+Obs: Após o conteiner docker, com todas as configurações subirem, caso você feche a aplicação e abra de novo, e o sistema dê algum erro do tipo "o database 'lojamanoel' já existe", é porque ele está tentando aplicar as migrações novamente. A única coisa que você precisa fazer, é ir no arquivo de docker-compose e trocar o "APPLY_MIGRATIONS=true" para "APPLY_MIGRATIONS=false".
