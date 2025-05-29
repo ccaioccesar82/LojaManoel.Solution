@@ -5,8 +5,6 @@ VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{7BF478A4-A560-4256-81B7-7474D4932873}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{3EE88D96-575A-48FF-9896-33B0D9B68864}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaManoel.Domain", "src\Backend\LojaManoel.Domain\LojaManoel.Domain.csproj", "{42B0FB00-3BF9-4589-83D4-53007B50278A}"
@@ -18,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaManoel.Api", "src\Backend\LojaManoel.Api\LojaManoel.Api.csproj", "{FF55536E-6AF7-4800-8B03-E1FB443047E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaManoel.Communication", "src\Backend\LojaManoel.Communication\LojaManoel.Communication.csproj", "{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +45,10 @@ Global
 		{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC91FA6-E0AA-4611-9C81-A93BAB1B885E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

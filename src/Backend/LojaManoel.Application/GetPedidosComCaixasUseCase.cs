@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using LojaManoel.Application.Interfaces;
+﻿using LojaManoel.Application.Interfaces;
 using LojaManoel.Communication.reponse;
 using LojaManoel.Domain;
 using LojaManoel.Infraestructure.Repositories;
@@ -10,8 +9,6 @@ namespace LojaManoel.Application
     {
 
         private readonly ILojaManoelRepository _repository;
-
-
 
 
         public GetPedidosComCaixasUseCase(ILojaManoelRepository repository)
@@ -84,16 +81,16 @@ namespace LojaManoel.Application
                 result.Add(new CaixaPedidoResponseJson
                 {
                     IdPedido = pedido.Id,
-                    caixas = caixas.Select((c, i) => new CaixaResponseJson
+                    caixas = [.. caixas.Select((c, i) => new CaixaResponseJson
                     {
                         Numero = i + 1,
                         Tipo = c.Tipo,
-                        Produtos = c.Produtos.Select(p => new ProdutosResponseJson
+                        Produtos = [.. c.Produtos.Select(p => new ProdutosResponseJson
                         {
                             Id = p.Id,
                             Item = p.Item
-                        }).ToList()
-                    }).ToList()
+                        })]
+                    })]
                 });
                 
             }

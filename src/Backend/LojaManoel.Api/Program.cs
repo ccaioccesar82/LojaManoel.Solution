@@ -34,6 +34,24 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+var applyMigrations = builder.Configuration.GetValue<bool>("APPLY_MIGRATIONS");
+
+if (applyMigrations)
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbContext = scope.ServiceProvider.GetRequiredService<LojaManoelDbContext>();
+
+        var pendingMigrations = dbContext.Database.GetPendingMigrations();
+        if (pendingMigrations.Any())
+        {
+            dbContext.Database.Migrate();
+        }
+
+    }
+
+}
+
 app.Run();
 
 
@@ -42,7 +60,7 @@ app.Run();
 
 void AddDbContext()
 {
-    var connectionString = "Data Source=localhost;Initial Catalog=lojadomanoel;User ID=sa;Password=@Password123;Trusted_Connection=True;TrustServerCertificate=True;";
+    var connectionString = builder.Configuration.GetConnectionString("Connection");
 
     builder.Services.AddDbContext<LojaManoelDbContext>(dbOptions =>
     {
