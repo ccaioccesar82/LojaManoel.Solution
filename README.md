@@ -6,7 +6,7 @@ Ter o repositório clonado para a sua máquina local.
 Seu Docker já estar ligado na sua máquina.
 
 Passos :
-Abra a solução no seu Visual Studio
+Abra a solução no seu Visual Studio.
 Vá no "docker-compose", clique com o botão direito e selecione "compose up" para que as imagens subam
 
 
