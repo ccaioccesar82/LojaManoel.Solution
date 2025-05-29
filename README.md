@@ -1,4 +1,4 @@
-# Passos para rodar a API no computador:
+# Passos para rodar a API no computador :rocket: :
 
 ## Requisitos:
 - Ter o repositório clonado para a sua máquina local.
@@ -19,7 +19,7 @@
 4. Após rodar, o Swagger deverá abrir na porta :8080 com os dois endpoints de serviço:
 
 
-/api/create/pedido - Cria um pedido com uma lista de itens da sua escolha(obs: comprimento, largura e altura só aceitam números inteiros.)
+/api/create/pedido - Cria um pedido com uma lista de itens da sua escolha(obs: **comprimento, largura e altura só aceitam números inteiros.**)
 
 
 /caixa-produto - devolve todos os pedidos, dizendo quantas caixas serão usadas no pedido e quais produtos vão em cada caixa
