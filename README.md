@@ -2,6 +2,7 @@ Passos para rodar a API no computador:
 
 Requisitos:
 Ter o repositório clonado para a sua máquina local.
+
 Seu Docker já estar ligado na sua máquina.
 
 Passos :
