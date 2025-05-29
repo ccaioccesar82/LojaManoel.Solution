@@ -1,11 +1,11 @@
-#Passos para rodar a API no computador:
+# Passos para rodar a API no computador:
 
-##Requisitos:
+## Requisitos:
 - Ter o repositório clonado para a sua máquina local.
 
 - Seu Docker já estar ligado na sua máquina.
 
-###Passos :
+### Passos :
 1. Abra a solução no seu Visual Studio.
 2. Vá no "docker-compose", clique com o botão direito e selecione "compose up" para que as imagens subam
 
