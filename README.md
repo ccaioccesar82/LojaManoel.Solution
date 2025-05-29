@@ -7,6 +7,8 @@ Seu Docker já estar ligado na sua máquina.
 Passos :
 Abra a solução no seu Visual Studio
 Vá no "docker-compose", clique com o botão direito e selecione "compose up" para que as imagens subam
+
+
 ![dockerup](https://github.com/user-attachments/assets/f7317521-82f2-47db-903b-ef847f8c89c8)
 
 Após as imagens subirem, o botão de rodar o sistema pelo docker compose será habilitado no topo do visual studio. É só selecionar ele e depois rodar o sistema pelo docker compose.
