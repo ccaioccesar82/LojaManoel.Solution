@@ -29,4 +29,4 @@
 
 
 
-Obs: Após o docker com as configurações subirem, caso você feche a aplicação e abra de novo, e o sistema dê algum erro do tipo "o database 'lojamanoel' já existe", é porque ele está tentando aplicar as migrações novamente. A única coisa que você precisa fazer, é ir no arquivo de docker-compose e trocar o "APPLY_MIGRATIONS=true" para "APPLY_MIGRATIONS=false".
+:warning: : Após o docker com as configurações subirem, caso você feche a aplicação e abra de novo, e o sistema dê algum erro do tipo "o database 'lojamanoel' já existe", é porque ele está tentando aplicar as migrações novamente. A única coisa que você precisa fazer, é ir no arquivo de docker-compose e trocar o *"APPLY_MIGRATIONS=true"* para *"APPLY_MIGRATIONS=false"*.
