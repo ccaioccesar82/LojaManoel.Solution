@@ -1,6 +1,30 @@
 services:
   lojamanoel.api:
-    image: ${DOCKER_REGISTRY-}lojamanoelapi
     build:
-      context: .
-      dockerfile: src\Backend\LojaManoel.Api\Dockerfile
+      context: ../LojaManoel
+      dockerfile: src/Backend/LojaManoel.Api/Dockerfile    
+    ports:
+     - "8080:8080"
+    environment:
+     - ConnectionStrings__Connection=Server=sqlserver;Database=lojadomanoel;User ID=sa;Password=@Password123;TrustServerCertificate=True; 
+     - ASPNETCORE_ENVIRONMENT=Development
+     - APPLY_MIGRATIONS=true
+    depends_on:
+    - sqlserver
+    restart: always
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+    - ACCEPT_EULA=Y
+    - MSSQL_SA_PASSWORD=@Password123
+    - MSSQL_DATABASE=lojadomanoel
+    ports:
+    - "1433:1433"
+    volumes:
+    - sql_data_loja_do_manoel:/var/opt/mssql
+    restart: always
+  
+
+volumes:
+  sql_data_loja_do_manoel:
